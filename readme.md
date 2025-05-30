@@ -1,4 +1,4 @@
-******Library Management System********
+******Library Management System******
 
 A web-based Library Management System (LMS) built with Flask (Python) and MySQL. This system allows users (students) to register, login, view and issue books, return books with fine calculation, and admins to manage books, view issued books, fine records, and generate reports.
 
@@ -50,41 +50,40 @@ MySQL server installed and running
 1. Clone the repository:
 
 
-git clone https://github.com/Murtaza12Khosa/library-management-system.git
-cd library-management-system
+        git clone https://github.com/Murtaza12Khosa/library-management-system.git
+        cd library-management-system
 2. Create a virtual environment (optional but recommended):
 
 
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-venv\Scripts\activate     # Windows
+        python -m venv venv
+        source venv/bin/activate  # Linux/macOS
+        venv\Scripts\activate     # Windows
 3. Install required dependencies:
 
-
-pip install -r requirements.txt
+        pip install -r requirements.txt
 4. Set up your MySQL database:
 
 Create a database named lmsystem
 
 Import your SQL schema or manually create tables:
 
-User, Book, Category, IssuedBooks, etc.
+    User, Book, Category, IssuedBooks, etc.
 
 5. Configure database connection in app.py (or your config file):
 
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'lmsystem'
+        app.config['MYSQL_HOST'] = 'localhost'
+        app.config['MYSQL_USER'] = 'root'
+        app.config['MYSQL_PASSWORD'] = ''
+        app.config['MYSQL_DB'] = 'lmsystem'
 
 6. Run the Flask app:
 
-flask run
+       flask run
 
 Or if you use your main file directly:
 
-python app.py
+    python app.py
 
 7. Access API endpoints at http://localhost:5000/api/...
 
