@@ -1,8 +1,9 @@
-Library Management System
+**Library Management System**
+
 A web-based Library Management System (LMS) built with Flask (Python) and MySQL. This system allows users (students) to register, login, view and issue books, return books with fine calculation, and admins to manage books, view issued books, fine records, and generate reports.
 
-Features
-User (Student) Dashboard
+**Features**
+**User (Student) Dashboard**
 Register and login
 
 View issued books and their return dates
@@ -11,7 +12,7 @@ Check pending fines
 
 Search for books by title, author, ISBN, or category
 
-Admin Dashboard
+**Admin Dashboard**
 Manage books (Add, Update, Delete)
 
 View all issued books (currently issued and returned)
@@ -20,13 +21,13 @@ View fine records for students
 
 Generate daily, weekly, and monthly reports:
 
-Books issued
+    Books issued
 
-Books returned
+    Books returned
 
-Fines collected
+    Fines collected
 
-Technologies Used
+**Technologies Used**
 Python 3.x
 
 Flask Web Framework
@@ -39,29 +40,29 @@ flask-cors for Cross-Origin Resource Sharing
 
 JSON for API communication
 
-Installation
-Prerequisites
+**Installation**
+**Prerequisites**
 Python 3.x installed
 
 MySQL server installed and running
 
-Steps
-Clone the repository:
+**Steps**
+1. Clone the repository:
 
 
 git clone https://github.com/Murtaza12Khosa/library-management-system.git
 cd library-management-system
-Create a virtual environment (optional but recommended):
+2. Create a virtual environment (optional but recommended):
 
 
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
-Install required dependencies:
+3. Install required dependencies:
 
 
 pip install -r requirements.txt
-Set up your MySQL database:
+4. Set up your MySQL database:
 
 Create a database named lmsystem
 
@@ -69,33 +70,33 @@ Import your SQL schema or manually create tables:
 
 User, Book, Category, IssuedBooks, etc.
 
-Configure database connection in app.py (or your config file):
+5. Configure database connection in app.py (or your config file):
 
-python
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'lmsystem'
-Run the Flask app:
 
+6. Run the Flask app:
 
 flask run
+
 Or if you use your main file directly:
 
-
 python app.py
-Access API endpoints at http://localhost:5000/api/...
 
-API Endpoints
-User Routes
+7. Access API endpoints at http://localhost:5000/api/...
+
+**API Endpoints**
+**User Routes**
 POST /api/register - Register a new user
 
 POST /api/login - User login
 
 GET /api/user_dashboard/<student_id> - View user dashboard and issued books
 
-Book Management Routes (Admin)
+**Book Management Routes (Admin)**
 POST /api/book_manage - Add new book
 
 PUT /api/update_book/<book_id> - Update book details
@@ -106,15 +107,15 @@ GET /api/views_book - View all books
 
 GET /api/search_books - Search books by filters
 
-Issued Books Routes
+**Issued Books Routes**
 POST /api/issue_book - Issue a book to a student
 
 POST /api/return_book/<issue_id> - Return a book and calculate fine
 
-Admin Dashboard
+**Admin Dashboard**
 GET /api/admin/dashboard?type=daily|weekly|monthly - View admin dashboard and reports
 
-Notes
+**Notes**
 Passwords are stored in plain text for simplicity; in production, always hash passwords using secure hashing (e.g., bcrypt).
 
 Fine calculation is Rs.10 per day after the due date.
@@ -122,7 +123,7 @@ Fine calculation is Rs.10 per day after the due date.
 Reports can be generated for daily, weekly, and monthly periods using query parameters.
 
 
-Contact
+**Contact**
 Created by Ghulam Murtaza
 Email: murtazakhosa069@gmail.com
 GitHub: https://github.com/Murtaza12Khosa
