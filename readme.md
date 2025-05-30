@@ -89,30 +89,34 @@ Or if you use your main file directly:
 
 **API Endpoints**
 **User Routes**
-POST /api/register - Register a new user
+    
+    POST /api/register - Register a new user
 
-POST /api/login - User login
+    POST /api/login - User login
 
-GET /api/user_dashboard/<student_id> - View user dashboard and issued books
+    GET /api/user_dashboard/<student_id> - View user dashboard and issued books
 
 **Book Management Routes (Admin)**
-POST /api/book_manage - Add new book
+    
+    POST /api/book_manage - Add new book
 
-PUT /api/update_book/<book_id> - Update book details
+    PUT /api/update_book/<book_id> - Update book details
 
-DELETE /api/delete_book/<book_id> - Delete a book
+    DELETE /api/delete_book/<book_id> - Delete a book
 
-GET /api/views_book - View all books
+    GET /api/views_book - View all books
 
-GET /api/search_books - Search books by filters
+    GET /api/search_books - Search books by filters
 
-**Issued Books Routes**
-POST /api/issue_book - Issue a book to a student
+**Issued Books Routes**    
 
-POST /api/return_book/<issue_id> - Return a book and calculate fine
+    POST /api/issue_book - Issue a book to a student
+
+    POST /api/return_book/<issue_id> - Return a book and calculate fine
 
 **Admin Dashboard**
-GET /api/admin/dashboard?type=daily|weekly|monthly - View admin dashboard and reports
+
+    GET /api/admin/dashboard?type=daily|weekly|monthly - View admin dashboard and reports
 
 **Notes**
 Passwords are stored in plain text for simplicity; in production, always hash passwords using secure hashing (e.g., bcrypt).
