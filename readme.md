@@ -130,5 +130,7 @@ Reports can be generated for daily, weekly, and monthly periods using query para
 **Contact**
 
 Created by Ghulam Murtaza
+
 Email: murtazakhosa069@gmail.com
+
 GitHub: https://github.com/Murtaza12Khosa
