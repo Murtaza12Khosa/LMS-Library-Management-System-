@@ -119,6 +119,7 @@ Or if you use your main file directly:
     GET /api/admin/dashboard?type=daily|weekly|monthly - View admin dashboard and reports
 
 **Notes**
+
 Passwords are stored in plain text for simplicity; in production, always hash passwords using secure hashing (e.g., bcrypt).
 
 Fine calculation is Rs.10 per day after the due date.
@@ -127,6 +128,7 @@ Reports can be generated for daily, weekly, and monthly periods using query para
 
 
 **Contact**
+
 Created by Ghulam Murtaza
 Email: murtazakhosa069@gmail.com
 GitHub: https://github.com/Murtaza12Khosa
