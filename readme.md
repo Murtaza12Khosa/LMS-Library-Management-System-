@@ -1,8 +1,8 @@
-**Library Management System**
+******Library Management System********
 
 A web-based Library Management System (LMS) built with Flask (Python) and MySQL. This system allows users (students) to register, login, view and issue books, return books with fine calculation, and admins to manage books, view issued books, fine records, and generate reports.
 
-**Features**
+****Features****
 **User (Student) Dashboard**
 Register and login
 
